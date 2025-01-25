@@ -1,7 +1,4 @@
-####
-src-git openclash https://github.com/vernesong/OpenClash.git
-
-# drop mosdns and v2ray-geodata packages that come with the source
+# drop mosdns 和 v2ray-geodata packages that come with the source
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
 
